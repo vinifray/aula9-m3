@@ -18,4 +18,15 @@ public class Sistema {
         return fatura;
     }
 
+    public static void executar() throws Exception {
+        boolean continuar = true;
+        while (continuar){
+            menu();
+            int resposta = new Scanner(System.in).nextInt();
+            if(resposta == 1){
+                Fatura fatura = pesquisarFatura();
+                System.out.println(fatura);
+            }
+        }
+    }
 }
