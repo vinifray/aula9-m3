@@ -11,4 +11,11 @@ public class Sistema {
         System.out.println(model.toString());
     }
 
+    public static Fatura pesquisarFatura() throws Exception {
+        System.out.println("Digite o email");
+        String email = new Scanner(System.in).nextLine();
+        Fatura fatura = ServicoFatura.pesquisarFaturaPeloEmailDoConsumidor(email);
+        return fatura;
+    }
+
 }
