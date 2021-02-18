@@ -1,6 +1,5 @@
 package com.br.zup;
 
-import java.util.Scanner;
 
 public class Main {
 

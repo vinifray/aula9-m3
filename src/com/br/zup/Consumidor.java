@@ -24,4 +24,12 @@ public class Consumidor {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder model = new StringBuilder();
+        model.append("Nome: "+ nomeCompleto);
+        model.append("\nEmail: "+email);
+        return model.toString();
+    }
 }

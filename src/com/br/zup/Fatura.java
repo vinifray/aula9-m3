@@ -34,4 +34,15 @@ public class Fatura {
     public void setDataVencimento(String dataVencimento) {
         this.dataVencimento = dataVencimento;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder model = new StringBuilder();
+        model.append("\n---------------------------------------\n");
+        model.append("Consumidor: \n"+consumidor);
+        model.append("\nValor da fatura: "+valor);
+        model.append("\nData de Vencimento: "+dataVencimento);
+        model.append("\n---------------------------------------\n");
+        return model.toString();
+    }
 }

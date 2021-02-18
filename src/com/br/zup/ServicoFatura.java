@@ -15,4 +15,13 @@ public class ServicoFatura {
         throw new Exception("Fatura não exite");
     }
 
+    public static Fatura cadastrarFatura(String email, double valor, String dataVencimento) throws Exception {
+        Consumidor consumidor = ServicoConsumidor.pesquisarConsumidorPorEmail(email);
+
+        Fatura fatura = new Fatura(consumidor, valor, dataVencimento);
+        faturas.add(fatura);
+
+        return fatura;
+    }
+
 }
