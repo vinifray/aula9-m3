@@ -2,6 +2,10 @@ package com.br.zup;
 
 import java.util.Scanner;
 
+/**
+ * Classe para abastraiar a funcionalidade do sistema.
+ *
+ */
 public class Sistema {
 
     public static void menu(){

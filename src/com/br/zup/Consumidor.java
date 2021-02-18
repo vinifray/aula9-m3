@@ -1,5 +1,8 @@
 package com.br.zup;
 
+/**
+ * Classe modelo para consumidor
+ */
 public class Consumidor {
     private String nomeCompleto;
     private String email;

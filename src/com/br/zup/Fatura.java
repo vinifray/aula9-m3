@@ -1,5 +1,8 @@
 package com.br.zup;
 
+/**
+ * Classe modelo para fatura
+ */
 public class Fatura {
     private Consumidor consumidor;
     private double valor;

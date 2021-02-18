@@ -3,6 +3,9 @@ package com.br.zup;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe para gerenciar os consumidores do sistema
+ */
 public class ServicoConsumidor {
     private static List<Consumidor> consumidores = new ArrayList<>();
 

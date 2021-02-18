@@ -3,6 +3,9 @@ package com.br.zup;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * classe para gerenciar as faturas do nosso sistema
+ */
 public class ServicoFatura {
     private static List<Fatura> faturas = new ArrayList<>();
 
