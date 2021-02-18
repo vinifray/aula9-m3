@@ -9,13 +9,14 @@ import java.util.List;
 public class ServicoFatura {
     private static List<Fatura> faturas = new ArrayList<>();
 
-    public static Fatura pesquisarFaturaPeloEmailDoConsumidor(String email) throws Exception {
+    public static List<Fatura> pesquisarFaturaPeloEmailDoConsumidor(String email){
+        List<Fatura> faturasDoUsuario = new ArrayList<>();
         for (Fatura fatura : faturas){
             if(fatura.getConsumidor().getEmail().equalsIgnoreCase(email)){
-                return fatura;
+                faturasDoUsuario.add(fatura);
             }
         }
-        throw new Exception("Fatura não exite");
+        return faturasDoUsuario;
     }
 
     public static Fatura cadastrarFatura(String email, double valor, String dataVencimento) throws Exception {
