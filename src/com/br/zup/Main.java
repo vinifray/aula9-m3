@@ -1,8 +1,17 @@
 package com.br.zup;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        boolean continuar = true;
+        while (continuar){
+            try{
+                continuar = Sistema.executar();
+            }catch (Exception erro){
+                System.out.println(erro.getMessage());
+            }
+        }
     }
 }
